@@ -10,7 +10,7 @@ router.get("/", function (req, res) {
     .selectall(function (data) {
       let devoured = data.filter((burger) => burger.devoured === 1);
       let undevoured = data.filter((burger) => burger.devoured === 0);
-      res.render("cards/burger-list", {
+      res.render("index", {
         devouredList: devoured,
         undevouredList: undevoured,
       });

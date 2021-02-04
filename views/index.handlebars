@@ -11,11 +11,43 @@
     <div class="row mt-5">
         <div class="col-md-6 offset-md-3">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Burger Name" aria-label="Burger Name" id="burgerName">
+                <input type="text" class="form-control" placeholder="Burger Name" aria-label="Burger Name"
+                    id="burgerName">
                 <div class="input-group-append">
                     <button class="btn btn-outline-success" type="button" id="addBurger">Add</button>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="float-container">
+    <div class="card">
+        <div class="card-header text-center">
+            <h4>New Burgers</h4>
+        </div>
+        <div class="card-body">
+
+            {{#each undevouredList}}
+            <div>
+                <p>{{id}} {{burger_name}}
+                    <button class="btn btn-sm btn-outline-danger m-1 devour-btn float-right"
+                        data-burger="{{id}}">Devour<i class="fas fa-utensils ml-2"></i>
+
+
+                    </button>
+                </p>
+            </div>
+            {{/each }}
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header text-center">
+            <h4>Devoured</h4>
+        </div>
+        <div class="card-body">
+            {{#each devouredList}}
+            <div>{{id}} {{burger_name}}</div>
+            {{/each }}
         </div>
     </div>
 </div>

@@ -1,0 +1,23 @@
+.float-container {
+    padding: 20px;
+    position: relative;
+    top:50%;
+    left:10%; 
+}
+
+.card-header {
+    background-color: rgb(236, 186, 20);
+    color: white;
+}
+
+.card {
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+}  
+
+.card-body{
+    border: 3px solid #fff;
+
+}
