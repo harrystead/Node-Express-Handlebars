@@ -21,3 +21,9 @@
     border: 3px solid #fff;
 
 }
+
+.input-group {
+    width: 400px;
+    position: relative;
+    left:25%; 
+}
